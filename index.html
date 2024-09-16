@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boutique Nike - Chaussures</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://example.com/nike-shoes-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero a {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .hero a:hover {
+            background-color: #e63946;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            padding: 0 10%;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .product h3 {
+            font-size: 1.5rem;
+            padding: 15px 0;
+        }
+
+        .product p {
+            font-size: 1.2rem;
+            padding: 10px;
+            color: #333;
+        }
+
+        .product button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #e63946;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nike Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Trouvez vos chaussures Nike parfaites</h2>
+        <a href="#">Découvrir les produits</a>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="https://example.com/nike-air-max.jpg" alt="Nike Air Max">
+            <h3>Nike Air Max</h3>
+            <p>129,99 €</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="https://example.com/nike-react.jpg" alt="Nike React">
+            <h3>Nike React</h3>
+            <p>119,99 €</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="https://example.com/nike-zoom.jpg" alt="Nike Zoom">
+            <h3>Nike Zoom</h3>
+            <p>139,99 €</p>
+            <button>Ajouter au panier</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nike Store. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
